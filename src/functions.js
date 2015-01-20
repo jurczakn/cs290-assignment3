@@ -34,11 +34,11 @@ var barType = typeof bar;
 */
 
 //your code here
-bar = function(float[] doubleArray){
+bar = function(doubleArray){
     
     var bool = false;
     
-    for(int i = 0; i < doubleArray.size; i++){
+    for(int i = 0; i < doubleArray.length; i++){
         
         doubleArray[i] *= 2;
         
@@ -84,11 +84,40 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
-function parseGit(GitLog log){
+function parseGit(logArray){
+    var hash = "";
     
-    logArray = [log.hash, " ", log.date, " \"", log.message, "\""];
+    var data = "";
     
-    return logArray;
+    var message = "";
+    
+    int i = 0;
+    
+    while(logArray[i] != " "){
+        
+        hash = hash + logArray[i];
+        
+        i++;
+    }
+    
+    i++;
+    
+     while(logArray[i] != " "){
+        
+        date = date + logArray[i];
+        
+        i++;
+    }
+    
+    while(i < logArray.length){
+        
+        message = message + logArray[i];
+        
+    }
+    
+    
+    
+    return GitLog(hash, date, message);
     
 }
 //end your code
