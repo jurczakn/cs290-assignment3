@@ -108,7 +108,7 @@ function parseGit(logArray){
         
         var k = j;
         
-        while(logArray[i].charAt(j) != "\'" && j < logArray[i].length){
+        while(logArray[i].charAt(j) != "\"" && j < logArray[i].length){
         
             j++;
             
