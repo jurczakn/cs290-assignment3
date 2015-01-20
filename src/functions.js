@@ -114,7 +114,7 @@ function parseGit(logArray){
             
         }
         
-        date = new Date(logArray[i].substring(k, j));
+        date = new Date(logArray[i].substring(k + 1, j - 1));
         
         while(j < logArray[i].length){
             
