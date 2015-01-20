@@ -36,17 +36,15 @@ var barType = typeof bar;
 //your code here
 bar = function(doubleArray){
     
-    var bool = false;
-    
     for(var i = 0; i < doubleArray.length; i++){
         
-        doubleArray[i] *= 2;
+        if(!(doubleArray[i] *= 2))
         
-        bool = true;
+            return false;
         
     }
     
-    return bool;
+    return true;
     
 }
 //end your code
@@ -85,39 +83,11 @@ function GitLog(hash, date, message) {
 
 //your code here
 function parseGit(logArray){
-    var hash = "";
+    var hash = logArray[0];
     
-    var data = "";
+    var data = [2];
     
-    var message = "";
-    
-    var i = 0;
-    
-    while(logArray[i] != " "){
-        
-        hash = hash + logArray[i];
-        
-        i++;
-    }
-    
-    i++;
-    
-     while(logArray[i] != " "){
-        
-        date = date + logArray[i];
-        
-        i++;
-    }
-    
-    i++;
-    
-    while(i < logArray.length){
-        
-        message = message + logArray[i];
-        
-    }
-    
-    
+    var message = [4];
     
     return GitLog(hash, date, message);
     
