@@ -109,6 +109,8 @@ function parseGit(logArray){
         i++;
     }
     
+    i++;
+    
     while(i < logArray.length){
         
         message = message + logArray[i];
