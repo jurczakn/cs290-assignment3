@@ -114,9 +114,11 @@ function parseGit(logArray){
             
         }
         
-        date = new Date(logArray[i].substring(k + 1, j - 1));
+        date = new Date(logArray[i].substring(k, j));
         
-        while(j < logArray[i].length){
+        j++;
+        
+        while(j < logArray[i].length - 1){
             
             message = message + logArray[i].charAt(j);
         
