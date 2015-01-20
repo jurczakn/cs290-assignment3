@@ -96,7 +96,7 @@ function parseGit(logArray){
         
         var message = "";
         
-        while(logArray[i].charAt(j) != " "){
+        while(logArray[i].charAt(j) != " " && j < logArray[i].length){
             
             hash = hash + logArray[i].charAt(j);
         
@@ -108,7 +108,7 @@ function parseGit(logArray){
         
         var k = j;
         
-        while(logArray[i].charAt(j) != "\'"){
+        while(logArray[i].charAt(j) != "\'" && j < logArray[i].length){
         
             j++;
             
