@@ -31,7 +31,7 @@ false otherwise
 */
 function isString(b) {
   //your code here
-  if(typeof(b) == string){
+  if(typeof(b) == 'string'){
     
     return true;
     
@@ -55,7 +55,7 @@ return true if c is null, false otherwise
 */
 function isNull(c) {
   //your code here
-  if(c === null){
+  if(c === ""){
     
     return true;
     
