@@ -38,7 +38,7 @@ bar = function(doubleArray){
     
     var bool = false;
     
-    for(int i = 0; i < doubleArray.length; i++){
+    for(var i = 0; i < doubleArray.length; i++){
         
         doubleArray[i] *= 2;
         
@@ -91,7 +91,7 @@ function parseGit(logArray){
     
     var message = "";
     
-    int i = 0;
+    var i = 0;
     
     while(logArray[i] != " "){
         
