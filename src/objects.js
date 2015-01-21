@@ -101,7 +101,7 @@ var MessageLog = function(user){
 * received.
 */
 //your code here
-MessageLog.prototype.lasRecievedMessage = function(){
+MessageLog.prototype.lastRecievedMessage = function(){
   
   return this.recievedMessages[0];
   
