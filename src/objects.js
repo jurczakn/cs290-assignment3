@@ -72,25 +72,25 @@ var MessageLog = function (user) {
       
     }
     
-  }
+  };
   
   this.getSentMessage = function (n) {
     
     return this.sentMessages[0];
     
-  }
+  };
   
   this.totalSent = function () {
     
     return this.sentMessages.length;
     
-  }
+  };
   
   this.totalRecieved = function () {
     
     return this.recievedMessages.length;
     
-  }
+  };
   
 }
 //end your code
@@ -105,7 +105,7 @@ MessageLog.prototype.lastRecievedMessage = function () {
   
   return this.recievedMessages[0];
   
-}
+};
 //end your code
 
 /**
