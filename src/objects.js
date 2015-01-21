@@ -86,7 +86,7 @@ var MessageLog = function (user) {
     
   };
   
-  this.totalRecieved = function () {
+  this.totalReceived = function () {
     
     return this.recievedMessages.length;
     
@@ -101,7 +101,7 @@ var MessageLog = function (user) {
 * received.
 */
 //your code here
-MessageLog.prototype.lastRecievedMessage = function () {
+MessageLog.prototype.lastReceivedMessage = function () {
   
   return this.recievedMessages[0];
   
