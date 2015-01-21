@@ -92,7 +92,7 @@ var MessageLog = function (user) {
     
   };
   
-}
+};
 //end your code
 
 /**
