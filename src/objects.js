@@ -50,7 +50,7 @@ var MessageLog = function (user) {
     
     if (direction === 0) {
       
-      this.sentMessages.unShift(messageText);
+      this.sentMessages.splice(0, 0, messageText);
       
       if(this.sentMessages.length > 5){
         
@@ -62,7 +62,7 @@ var MessageLog = function (user) {
       
     if (direction === 0) {
       
-      this.recievedMessages.unShift(messageText);
+      this.recievedMessages.splice(0, 0, messageText);
       
       if(this.recievedMessages.length > 5){
         
