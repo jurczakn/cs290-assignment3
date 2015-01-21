@@ -101,11 +101,11 @@ var MessageLog = function (user) {
 * received.
 */
 //your code here
-//MessageLog.prototype.lastRecievedMessage = function () {
+MessageLog.prototype.lastRecievedMessage = function () {
   
-//  return this.recievedMessages[0];
+  return this.recievedMessages[0];
   
-//};
+};
 //end your code
 
 /**
@@ -115,11 +115,11 @@ var MessageLog = function (user) {
 */
 
 //your code here
-//var myLog = new MessageLog("BlackHatGuy");
+var myLog = new MessageLog("BlackHatGuy");
 
-//myLog.logMessage("foo", 1);
+myLog.logMessage("foo", 1);
 
-//myLog.logMessage("bar", 1);
+myLog.logMessage("bar", 1);
 
-//myLog.logMessage("baz", 1);
+myLog.logMessage("baz", 1);
 //end your code
