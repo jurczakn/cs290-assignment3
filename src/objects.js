@@ -76,7 +76,7 @@ var MessageLog = function (user) {
   
   this.getSentMessage = function (n) {
     
-    return this.sentMessages[0];
+    return this.sentMessages[n];
     
   };
   
@@ -92,7 +92,7 @@ var MessageLog = function (user) {
     
   };
   
-}
+};
 //end your code
 
 /**
