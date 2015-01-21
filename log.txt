@@ -1,3 +1,7 @@
 Start: Tue Jan 20 00:30:00 2015 -0600
 End: Tue Jan 20 00:53:21 2015 -0600
 Tasks: Created git repository and copied in files.
+
+End: Tue Jan 20 01:00:00 2015 -0600
+End: Tue Jan 20 05:31:23 2015 -0600
+Tasks: Finished all variables and funcitons except is null, which is still not working.
