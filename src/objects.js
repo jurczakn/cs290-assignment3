@@ -48,7 +48,7 @@ var MessageLog = function (user) {
   
   this.logMessage = function (messageText, direction) {
     
-    if (direction === 0) {
+    if (direction == 0) {
       
       this.sentMessages.splice(0, 0, messageText);
       
@@ -60,7 +60,7 @@ var MessageLog = function (user) {
       
     }
       
-    if (direction === 0) {
+    if (direction == 1) {
       
       this.recievedMessages.splice(0, 0, messageText);
       
